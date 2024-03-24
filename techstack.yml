@@ -1,0 +1,409 @@
+repo_name: gwicho38/zk
+report_id: b414f86f55b5edfc75ba926da0b6ef87
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-24T18:03:52+00:00'
+requested_by: gwicho38
+provider: github
+branch: main
+detected_tools_count: 28
+tools:
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/gwicho38/zk
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/gwicho38/zk
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/.github/workflows/build.yml
+  detection_source: ".github/workflows/build.yml"
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-11 07:44:00.000000000 Z
+- name: crypto
+  description: Go supplementary cryptography libraries
+  package_url: https://pkg.go.dev/golang.org/x/crypto
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-05 16:01:06.000000000 Z
+  vulnerabilities:
+  - name: Improper Verification of Cryptographic Signature in golang.org/x/crypto
+    cve_id: CVE-2020-9283
+    cve_url: https://github.com/advisories/GHSA-ffhg-7mh4-33c4
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 0.0.0-20200220183623-bac4c82f6975
+- name: yaml.v2
+  description: YAML support for the Go language
+  package_url: https://pkg.go.dev/gopkg.in/yaml.v2
+  version: 2.2.2
+  license: LGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+  vulnerabilities:
+  - name: Excessive Platform Resource Consumption within a Loop in Kubernetes
+    cve_id: CVE-2019-11254
+    cve_url: https://github.com/advisories/GHSA-wxc4-f4m6-wwqv
+    detected_date: Jan 28
+    severity: moderate
+    first_patched: 2.2.8
+- name: ansi
+  description: Small, fast library to create ANSI colored strings and codes
+  package_url: https://pkg.go.dev/github.com/mgutz/ansi
+  version: 0.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: check.v1
+  description: Package check is a rich testing extension for Go's testing package
+  package_url: https://pkg.go.dev/gopkg.in/check.v1
+  version: 0.0.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: color
+  description: Color package for Go
+  package_url: https://pkg.go.dev/github.com/fatih/color
+  version: 1.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: colorstring
+  description: Go
+  package_url: https://pkg.go.dev/github.com/mitchellh/colorstring
+  version: 0.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: errors
+  description: Simple error handling primitives
+  package_url: https://pkg.go.dev/github.com/pkg/errors
+  version: 0.8.1
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2023-02-23 13:56:57.000000000 Z
+- name: go-colorable
+  description: Go-colorable Colorable writer for windows
+  package_url: https://pkg.go.dev/github.com/mattn/go-colorable
+  version: 0.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: go-deadlock
+  description: Online deadlock detection in go
+  package_url: https://pkg.go.dev/github.com/sasha-s/go-deadlock
+  version: 0.3.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: go-isatty
+  description: Package isatty implements interface to isatty
+  package_url: https://pkg.go.dev/github.com/mattn/go-isatty
+  version: 0.0.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Michael McDonagh
+  last_updated_on: 2024-01-10 21:47:22.000000000 Z
+- name: go-runewidth
+  description: Go-runewidth Provides functions to get fixed width of the character
+    or string
+  package_url: https://pkg.go.dev/github.com/mattn/go-runewidth
+  version: 0.0.13
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: go-shellquote
+  description: Go utilities for performing shell-like word splitting/joining
+  package_url: https://pkg.go.dev/github.com/kballard/go-shellquote
+  version: 0.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2023-03-04 09:32:39.000000000 Z
+- name: go-sqlite3
+  description: Sqlite3 driver for go using database/sql
+  package_url: https://pkg.go.dev/github.com/mattn/go-sqlite3
+  version: 1.14.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2023-03-04 09:32:39.000000000 Z
+- name: go-toml
+  description: Go library for the TOML language
+  package_url: https://pkg.go.dev/github.com/pelletier/go-toml
+  version: 1.9.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2023-03-04 09:32:39.000000000 Z
+- name: goid
+  description: Goid Demo of how to programatically retrieve the current goroutine's
+    ID
+  package_url: https://pkg.go.dev/github.com/petermattis/goid
+  version: 0.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: jsonrpc2
+  description: Package jsonrpc2 provides a client and server implementation of JSON-RPC
+    2.0
+  package_url: https://pkg.go.dev/github.com/sourcegraph/jsonrpc2
+  version: 0.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: kong
+  description: Kong is a command-line parser for Go
+  package_url: https://pkg.go.dev/github.com/alecthomas/kong
+  version: 0.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: kr/text
+  description: Miscellaneous functions for formatting text
+  package_url: https://pkg.go.dev/github.com/kr/text
+  version: 0.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-05 16:01:06.000000000 Z
+- name: pretty
+  description: Pretty printing for Go values
+  package_url: https://pkg.go.dev/github.com/kr/pretty
+  version: 0.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Michael McDonagh
+  last_updated_on: 2024-01-10 21:47:22.000000000 Z
+- name: raymond
+  description: Handlebars for golang
+  package_url: https://pkg.go.dev/github.com/aymerick/raymond
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.mod
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2020-12-26 15:53:04.000000000 Z
+- name: slug
+  description: URL-friendly slugify with multiple languages support
+  package_url: https://pkg.go.dev/github.com/gosimple/slug
+  version: 1.12.0
+  license: MPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: sys
+  description: Go packages for low-level interaction with the operating system
+  package_url: https://pkg.go.dev/golang.org/x/sys
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2020-12-24 15:02:19.000000000 Z
+- name: text
+  description: Go text processing support
+  package_url: https://pkg.go.dev/golang.org/x/text
+  version: 0.3.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-05 16:01:06.000000000 Z
+- name: websocket
+  description: A fast
+  package_url: https://pkg.go.dev/github.com/gorilla/websocket
+  version: 1.4.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2022-05-29 09:55:55.000000000 Z
+- name: xurls
+  description: Extract urls from text
+  package_url: https://pkg.go.dev/github.com/mvdan/xurls
+  version: 1.1.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/gwicho38/zk/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Mickaël Menu
+  last_updated_on: 2021-02-12 18:34:04.000000000 Z
