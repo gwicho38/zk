@@ -5,9 +5,10 @@ import (
 	"path/filepath"
 	"strings"
 
+	toml "github.com/pelletier/go-toml"
 	"github.com/zk-org/zk/internal/util/errors"
 	"github.com/zk-org/zk/internal/util/opt"
-	toml "github.com/pelletier/go-toml"
+	"github.com/zk-org/zk/internal/util/paths"
 )
 
 // Config holds the user configuration.
@@ -22,6 +23,10 @@ type Config struct {
 	Aliases  map[string]string
 	Extra    map[string]string
 }
+
+// NOTE: config generation occurs in core.Init. The below function is used
+// for test cases and as a program level default if the user conf is missing or
+// has values missing.
 
 // NewDefaultConfig creates a new Config with the default settings.
 func NewDefaultConfig() Config {
@@ -308,7 +313,11 @@ func ParseConfig(content []byte, path string, parentConfig Config, isGlobal bool
 		config.Note.Extension = note.Extension
 	}
 	if note.Template != "" {
-		config.Note.BodyTemplatePath = opt.NewNotEmptyString(note.Template)
+		expanded, err := paths.ExpandTilde(note.Template)
+		if err != nil {
+			return config, wrap(err)
+		}
+		config.Note.BodyTemplatePath = opt.NewNotEmptyString(expanded)
 	}
 	if note.IDLength != 0 {
 		config.Note.IDOptions.Length = note.IDLength
@@ -522,7 +531,7 @@ type tomlNoteConfig struct {
 	IDLength     int      `toml:"id-length"`
 	IDCase       string   `toml:"id-case"`
 	Exclude      []string `toml:"exclude"`
-	Ignore      []string `toml:"ignore"` // Legacy alias to `exclude`
+	Ignore       []string `toml:"ignore"` // Legacy alias to `exclude`
 }
 
 type tomlGroupConfig struct {
